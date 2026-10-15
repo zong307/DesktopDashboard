@@ -1,0 +1,43 @@
+﻿# DesktopDashboard Configuration
+# User-editable settings for the desktop sticky note widget
+
+# Display settings
+display:
+  width: 280                    # Widget width in pixels
+  height: 180                   # Widget height in pixels
+  corner_radius: 16             # Border radius (Apple style)
+  padding: 20                   # Inner padding
+  opacity: 0.85                 # Window opacity (0.0 ~ 1.0)
+  
+  # Frosted glass effect (best on supported platforms)
+  frosted_glass: true           # Enable acrylic/vibrancy effect
+  
+  # Font settings
+  font_family: ""               # Empty = auto-detect system font
+  font_size: 13                 # Base font size in pts
+  font_weight: 500              # Normal = 400, SemiBold = 600
+
+# Refresh settings
+refresh:
+  interval_seconds: 60          # How often to refresh IP
+  public_ip_url: "https://api.ipify.org"  # Public IP API endpoint
+
+# Appearance
+appearance:
+  theme: "light"                # "light" or "dark"
+  accent_color: "#007AFF"       # Apple blue accent
+  text_color_primary: "#1d1d1f" # Apple dark text
+  text_color_secondary: "#86868b" # Apple gray text
+  bg_color: "rgba(255, 255, 255, 0.85)"
+  
+  # Show/hide content blocks
+  show_lan_ip: true
+  show_public_ip: true
+  show_hostname: false
+  show_timestamp: true
+
+# Window behavior
+window:
+  always_on_top: true           # Stay above other windows
+  draggable: true               # Allow dragging by clicking anywhere
+  show_on_startup: true         # Show widget when app starts
